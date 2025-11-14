@@ -4,14 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BYTEEX - Don't apologize for being comfortable.</title>
+    
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Sofia+Pro:wght@400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Top Banner -->
+    <!-- ========================================================================
+         TOP BANNER
+         ======================================================================== -->
     <header class="top-banner" role="banner">
         <div class="banner-content">
             <span>CONSCIOUSLY MADE BUTTER SOFT STAPLES FOR EVERY DAY (OR NIGHT)</span>
@@ -22,7 +28,9 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- ========================================================================
+         HERO SECTION
+         ======================================================================== -->
     <main class="hero-section">
         <div class="hero-left">
             <img src="images/logo.svg" alt="BYTEEX" class="logo-img">
@@ -69,21 +77,28 @@
         </div>
 
         <div class="review-card">
-            <img src="images/amy-avatar-new.png" alt="Amy P." class="review-avatar">
-            <div class="review-header">
-                <div class="reviewer-name">Amy P.</div>
-                <div class="review-meta">
-                    <span class="stars">★★★★★</span>
-                    <span>One of 500+ 5 Star Reviews Online</span>
+            <div class="review-card__top">
+                <img src="images/amy-avatar-new.png" alt="Amy P." class="review-avatar">
+                <div class="review-header">
+                    <div class="review-meta">
+                        <span class="stars">★★★★★</span>
+                        <span>One of 500+ 5 Star Reviews Online</span>
+                    </div>
+                    <div class="reviewer-name">Amy P.</div>
                 </div>
             </div>
             <p class="review-text">
                 Overjoyed with my Loungewear set. I have the jogger and the sweatshirt. Quality product on every level. From the compostable packaging, to the supplied washing bag, even the garments smells like fresh herbs when I first held them.
             </p>
+            <p class="review-text-mobile">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed sollicitudin dolor, non sodales justo.
+            </p>
         </div>
     </main>
 
-    <!-- Loungewear Section -->
+    <!-- ========================================================================
+         LOUNGEWEAR SECTION
+         ======================================================================== -->
     <section class="loungewear-section">
         <div class="loungewear-gradient" aria-hidden="true">
             <svg width="1465" height="530" viewBox="0 0 1465 530" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -102,17 +117,44 @@
             <div class="as-seen-in__logos">
                 <img src="images/as-seen-in-mockup.png" alt="As seen in logos" class="as-seen-in__image">
             </div>
+            <div class="as-seen-in__slider" aria-live="polite">
+                <div class="as-seen-in__track">
+                    <div class="as-seen-in__slide">
+                        <span class="as-seen-in__logo as-seen-in__logo--text">ECO-STYLIST</span>
+                        <img src="images/canadian-living.png" alt="Canadian Living logo" class="as-seen-in__logo">
+                        <img src="images/jillian-harris.png" alt="Jillian Harris logo" class="as-seen-in__logo">
+                    </div>
+                    <div class="as-seen-in__slide">
+                        <span class="as-seen-in__logo as-seen-in__logo--text">REFINERY29</span>
+                        <span class="as-seen-in__logo as-seen-in__logo--text">WELL + GOOD</span>
+                        <img src="images/canadian-living.png" alt="Canadian Living logo" class="as-seen-in__logo">
+                    </div>
+                    <div class="as-seen-in__slide">
+                        <img src="images/jillian-harris.png" alt="Jillian Harris logo" class="as-seen-in__logo">
+                        <span class="as-seen-in__logo as-seen-in__logo--text">MINDBODYGREEN</span>
+                        <span class="as-seen-in__logo as-seen-in__logo--text">GOOP</span>
+                    </div>
+                </div>
+                <div class="as-seen-in__dots" role="tablist" aria-label="As seen in logos navigation">
+                    <button class="as-seen-in__dot is-active" type="button" role="tab" aria-selected="true" aria-label="Show logo group 1"></button>
+                    <button class="as-seen-in__dot" type="button" role="tab" aria-selected="false" aria-label="Show logo group 2"></button>
+                    <button class="as-seen-in__dot" type="button" role="tab" aria-selected="false" aria-label="Show logo group 3"></button>
+                </div>
+            </div>
         </div>
 
         <div class="loungewear-content">
             <div class="loungewear-left">
-                <h2 class="loungewear-title">Loungewear you can be proud of.</h2>
+                <h2 class="loungewear-title">Loungewear you can be<br class="loungewear-title__break">proud of.</h2>
 
                 <ul class="loungewear-list">
                     <li class="loungewear-feature">
                         <span class="loungewear-feature__icon" aria-hidden="true">
-                            <svg width="42" height="42" aria-hidden="true">
+                            <svg class="loungewear-feature__icon-desktop" width="42" height="42" aria-hidden="true">
                                 <use href="images/icons-sprite.svg#icon-ethically"></use>
+                            </svg>
+                            <svg class="loungewear-feature__icon-mobile" width="26" height="19" viewBox="0 0 26 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.303 4.95408H19.1717C18.0552 1.99411 15.313 0 12.2121 0C8.19961 0 4.91432 3.3283 4.73499 7.49052C2.06188 7.88893 0 10.3049 0 13.2164C0 16.4055 2.4741 19 5.51515 19H19.303C22.9957 19 26 15.8495 26 11.977C26 8.10458 22.9957 4.95408 19.303 4.95408ZM19.303 16.5213H5.51515C3.77741 16.5213 2.36364 15.0387 2.36364 13.2164C2.36364 11.3941 3.77741 9.91146 5.51515 9.91146H5.90909C6.56177 9.91146 7.09091 9.35657 7.09091 8.67212V7.84911C7.09091 4.88781 9.38828 2.47861 12.2121 2.47861C14.5493 2.47861 16.5886 4.13347 17.1713 6.50293C17.3059 7.05031 17.7767 7.43277 18.3157 7.43277H19.303C21.6924 7.43277 23.6364 9.47133 23.6364 11.977C23.6364 14.4828 21.6924 16.5213 19.303 16.5213Z" fill="#01005B" />
                             </svg>
                         </span>
                         <div class="loungewear-feature__content">
@@ -122,8 +164,16 @@
                     </li>
                     <li class="loungewear-feature">
                         <span class="loungewear-feature__icon" aria-hidden="true">
-                            <svg width="42" height="42" aria-hidden="true">
+                            <svg class="loungewear-feature__icon-desktop" width="42" height="42" aria-hidden="true">
                                 <use href="images/icons-sprite.svg#icon-responsibly"></use>
+                            </svg>
+                            <svg class="loungewear-feature__icon-mobile" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.8 0.800049V26.8" stroke="#15005B" stroke-width="1.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M13.7998 20.7998C9.9298 20.7998 6.7998 17.6698 6.7998 13.7998C6.7998 9.9298 9.9298 6.7998 13.7998 6.7998" stroke="#15005B" stroke-width="1.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M4.60986 4.6106L6.72986 6.7306" stroke="#15005B" stroke-width="1.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M0.800049 13.8H3.80005" stroke="#15005B" stroke-width="1.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M4.60986 22.9901L6.72986 20.8701" stroke="#15005B" stroke-width="1.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M13.8 10.3498C15 8.2298 17.28 6.7998 19.89 6.7998C20.05 6.7998 20.2 6.80981 20.36 6.81981C18.69 7.69981 17.56 9.4498 17.56 11.4598C17.56 14.3598 19.91 16.7098 22.81 16.7098C24.41 16.7098 25.84 15.9898 26.8 14.8598C26.28 18.2298 23.39 20.7998 19.89 20.7998C17.28 20.7998 15 19.3698 13.8 17.2498" stroke="#15005B" stroke-width="1.6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                         </span>
                         <div class="loungewear-feature__content">
@@ -133,8 +183,11 @@
                     </li>
                     <li class="loungewear-feature">
                         <span class="loungewear-feature__icon" aria-hidden="true">
-                            <svg width="42" height="42" aria-hidden="true">
-                                <use href="images/icons-sprite.svg#icon-living"></use>
+                            <svg class="loungewear-feature__icon-desktop" width="42" height="42" aria-hidden="true">
+                                <use href="images/icons-sprite.svg#icon-sun"></use>
+                            </svg>
+                            <svg class="loungewear-feature__icon-mobile" width="23" height="23" aria-hidden="true">
+                                <use href="images/icons-sprite.svg#icon-sun"></use>
                             </svg>
                         </span>
                         <div class="loungewear-feature__content">
@@ -144,8 +197,11 @@
                     </li>
                     <li class="loungewear-feature">
                         <span class="loungewear-feature__icon" aria-hidden="true">
-                            <svg width="42" height="42" aria-hidden="true">
+                            <svg class="loungewear-feature__icon-desktop" width="42" height="42" aria-hidden="true">
                                 <use href="images/icons-sprite.svg#icon-comfortable"></use>
+                            </svg>
+                            <svg class="loungewear-feature__icon-mobile" width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.00902 4.56956C4.14419 2.74527 5.83081 1.30286 10.4079 3.87633C12.6066 5.11198 14.38 5.579 15.8552 5.57657C18.4402 5.57657 20.1158 4.14633 21.5641 2.90946C21.8127 2.69426 21.9673 2.39118 21.9951 2.06448C22.0229 1.73777 21.9218 1.41312 21.7132 1.15935C21.6114 1.03482 21.4856 0.931869 21.3431 0.85658C21.2007 0.781292 21.0445 0.735197 20.8838 0.721023C20.7232 0.706849 20.5613 0.724884 20.4077 0.77406C20.2542 0.823237 20.1121 0.902556 19.9899 1.00733C17.856 2.83405 16.1681 4.27646 11.591 1.70056C5.5436 -1.69627 2.71056 0.723953 0.434842 2.66986C0.186433 2.88523 0.0320662 3.18839 0.00445994 3.51509C-0.0231463 3.84179 0.0781781 4.16635 0.286957 4.41997C0.388793 4.54428 0.514655 4.64701 0.657094 4.72206C0.799533 4.79711 0.955655 4.84297 1.11622 4.85692C1.27678 4.87087 1.43853 4.85262 1.59188 4.80326C1.74524 4.75391 1.88708 4.67444 2.00902 4.56956ZM19.9899 7.21843C17.856 9.04272 16.1681 10.4876 11.591 7.91166C5.5436 4.5124 2.71056 6.93384 0.434842 8.87854C0.186433 9.09391 0.0320662 9.39707 0.00445994 9.72377C-0.0231463 10.0505 0.0781781 10.375 0.286957 10.6286C0.388617 10.7531 0.514344 10.8561 0.656695 10.9313C0.799046 11.0066 0.955127 11.0527 1.1157 11.0669C1.27627 11.081 1.43807 11.063 1.59151 11.0139C1.74495 10.9647 1.88693 10.8854 2.00902 10.7807C4.14419 8.95516 5.83081 7.51275 10.4079 10.085C12.6066 11.3231 14.38 11.7877 15.8552 11.7877C18.4402 11.7877 20.1158 10.3574 21.5641 9.11813C21.8129 8.90331 21.9676 8.6004 21.9955 8.27381C22.0233 7.94722 21.922 7.62269 21.7132 7.36924C21.6114 7.24466 21.4856 7.14167 21.3431 7.0664C21.2006 6.99113 21.0443 6.94509 20.8836 6.93103C20.7229 6.91696 20.561 6.93515 20.4075 6.98452C20.2539 7.03389 20.1119 7.11343 19.9899 7.21843ZM19.9899 13.4283C17.856 15.255 16.1681 16.6975 11.591 14.124C5.5436 10.7247 2.71056 13.145 0.434842 15.0909C0.186433 15.3062 0.0320662 15.6094 0.00445994 15.9361C-0.0231463 16.2628 0.0781781 16.5873 0.286957 16.841C0.388693 16.9654 0.514515 17.0683 0.656957 17.1434C0.7994 17.2186 0.95556 17.2645 1.11617 17.2784C1.27679 17.2924 1.43858 17.2741 1.59195 17.2247C1.74533 17.1752 1.88716 17.0956 2.00902 16.9906C4.14419 15.1663 5.83081 13.7251 10.4079 16.2973C12.6066 17.533 14.38 18 15.8552 18C18.4402 18 20.1158 16.5673 21.5641 15.3305C21.8127 15.1153 21.9673 14.8122 21.9951 14.4855C22.0229 14.1588 21.9218 13.8341 21.7132 13.5803C21.6113 13.456 21.4854 13.3531 21.343 13.2779C21.2005 13.2028 21.0444 13.1567 20.8838 13.1425C20.7232 13.1284 20.5613 13.1464 20.4078 13.1954C20.2543 13.2445 20.1122 13.3237 19.9899 13.4283Z" fill="#01005B" />
                             </svg>
                         </span>
                         <div class="loungewear-feature__content">
@@ -154,6 +210,23 @@
                         </div>
                     </li>
                 </ul>
+
+                <div class="loungewear-cta">
+                    <button class="loungewear-cta__button" type="button">
+                        <span>Customize Your Outfit</span>
+                        <svg width="23" height="10" aria-hidden="true">
+                            <use href="images/icons-sprite.svg#icon-arrow-right"></use>
+                        </svg>
+                    </button>
+                    <div class="loungewear-cta__reviews">
+                        <div class="loungewear-cta__stars" aria-label="5 out of 5 stars">
+                            <svg width="81" height="13" aria-hidden="true">
+                                <use href="images/icons-sprite.svg#icon-stars"></use>
+                            </svg>
+                        </div>
+                        <p class="loungewear-cta__text">Over 500+ 5 Star Reviews Online</p>
+                    </div>
+                </div>
             </div>
 
             <div class="loungewear-right">
@@ -164,31 +237,31 @@
                         </svg>
                     </button>
                     <div class="carousel__main">
-                        <img src="images/image 22.png" alt="White Robe" id="carouselMainImage">
+                        <img src="images/white-robe-main.png" alt="White Robe" id="carouselMainImage">
                         <div class="carousel__thumbnails" role="tablist" aria-label="Product thumbnails">
-                            <button class="thumbnail" type="button" data-image="images/image 22.png" role="tab" aria-selected="false" aria-label="White Robe detail 1">
-                                <img src="images/Rectangle 778.png" alt="White Robe detail 1">
+                            <button class="thumbnail" type="button" data-image="images/white-robe-main.png" role="tab" aria-selected="false" aria-label="White Robe detail 1">
+                                <img src="images/white-robe-thumbnail.png" alt="White Robe detail 1">
                             </button>
-                            <button class="thumbnail is-active" type="button" data-image="images/image 22.png" role="tab" aria-selected="true" aria-label="White Robe detail 2">
-                                <img src="images/Rectangle 7777.png" alt="White Robe detail 2">
+                            <button class="thumbnail is-active" type="button" data-image="images/white-robe-main.png" role="tab" aria-selected="true" aria-label="White Robe detail 2">
+                                <img src="images/white-robe-thumbnail-active.png" alt="White Robe detail 2">
                             </button>
-                            <button class="thumbnail" type="button" data-image="images/mock.png" role="tab" aria-selected="false" aria-label="White Robe detail 3">
-                                <img src="images/Rectangle 778.png" alt="White Robe detail 3">
+                            <button class="thumbnail" type="button" data-image="images/white-robe-thumbnail-placeholder.png" role="tab" aria-selected="false" aria-label="White Robe detail 3">
+                                <img src="images/white-robe-thumbnail-placeholder.png" alt="White Robe detail 3">
                             </button>
-                            <button class="thumbnail" type="button" data-image="images/mock.png" role="tab" aria-selected="false" aria-label="White Robe detail 4">
-                                <img src="images/Rectangle 778.png" alt="White Robe detail 4">
+                            <button class="thumbnail" type="button" data-image="images/white-robe-thumbnail-placeholder.png" role="tab" aria-selected="false" aria-label="White Robe detail 4">
+                                <img src="images/white-robe-thumbnail-placeholder.png" alt="White Robe detail 4">
                             </button>
-                            <button class="thumbnail" type="button" data-image="images/mock.png" role="tab" aria-selected="false" aria-label="White Robe detail 5">
-                                <img src="images/Rectangle 778.png" alt="White Robe detail 5">
+                            <button class="thumbnail" type="button" data-image="images/white-robe-thumbnail-placeholder.png" role="tab" aria-selected="false" aria-label="White Robe detail 5">
+                                <img src="images/white-robe-thumbnail-placeholder.png" alt="White Robe detail 5">
                             </button>
-                            <button class="thumbnail" type="button" data-image="images/mock.png" role="tab" aria-selected="false" aria-label="White Robe detail 6">
-                                <img src="images/Rectangle 778.png" alt="White Robe detail 6">
+                            <button class="thumbnail" type="button" data-image="images/white-robe-thumbnail-placeholder.png" role="tab" aria-selected="false" aria-label="White Robe detail 6">
+                                <img src="images/white-robe-thumbnail-placeholder.png" alt="White Robe detail 6">
                             </button>
-                            <button class="thumbnail" type="button" data-image="images/mock.png" role="tab" aria-selected="false" aria-label="White Robe detail 7">
-                                <img src="images/Rectangle 778.png" alt="White Robe detail 7">
+                            <button class="thumbnail" type="button" data-image="images/white-robe-thumbnail-placeholder.png" role="tab" aria-selected="false" aria-label="White Robe detail 7">
+                                <img src="images/white-robe-thumbnail-placeholder.png" alt="White Robe detail 7">
                             </button>
-                            <button class="thumbnail" type="button" data-image="images/mock.png" role="tab" aria-selected="false" aria-label="White Robe detail 8">
-                                <img src="images/Rectangle 778.png" alt="White Robe detail 8">
+                            <button class="thumbnail" type="button" data-image="images/white-robe-thumbnail-placeholder.png" role="tab" aria-selected="false" aria-label="White Robe detail 8">
+                                <img src="images/white-robe-thumbnail-placeholder.png" alt="White Robe detail 8">
                             </button>
                         </div>
                     </div>
@@ -203,13 +276,16 @@
         </div>
     </section>
 
-    <!-- Be your best self Section -->
+    <!-- ========================================================================
+         FOUNDER SECTION - Be your best self
+         ======================================================================== -->
     <section class="founder-section">
         <div class="founder-container">
+            <h2 class="founder-title founder-title--mobile">Be your best self.</h2>
             <div class="founder-image-wrapper">
             </div>
             <div class="founder-content">
-                <h2 class="founder-title">Be your best self.</h2>
+                <h2 class="founder-title founder-title--desktop">Be your best self.</h2>
                 <div class="founder-text">
                     <p>Hi! My name's [Insert Name], and I founded [Insert] in ____.</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis sapien facilisis tincidunt pellentesque. In eget ipsum et felis finibus consequat.</p>
@@ -226,62 +302,130 @@
         </div>
     </section>
 
-    <!-- Comfort made easy Section -->
-    <section class="comfort-section">
-        <h2 class="comfort-title">Comfort made easy</h2>
-        
-        <div class="comfort-cards">
-            <div class="comfort-card comfort-card--left">
-                <div class="comfort-card__icon">
-                    <div class="comfort-card__icon-bg">
-                        <img src="images/eco-store-icon.svg" alt="Eco store icon" class="comfort-card__icon-img">
+    <!-- ========================================================================
+         COMFORT MADE EASY SECTION
+         ======================================================================== -->
+    <section class="comfort-section" aria-label="Comfort made easy">
+        <div class="comfort-desktop">
+            <h2 class="comfort-title">Comfort made easy</h2>
+            
+            <div class="comfort-cards">
+                <div class="comfort-card comfort-card--left">
+                    <div class="comfort-card__icon">
+                        <div class="comfort-card__icon-bg">
+                            <img src="images/eco-store-icon.svg" alt="Eco store icon" class="comfort-card__icon-img">
+                        </div>
                     </div>
+                    <h3 class="comfort-card__title">You save.</h3>
+                    <p class="comfort-card__text">Browse our comfort sets and save 15% when you bundle.</p>
                 </div>
-                <h3 class="comfort-card__title">You save.</h3>
-                <p class="comfort-card__text">Browse our comfort sets and save 15% when you bundle.</p>
+                
+                <div class="comfort-card comfort-card--middle">
+                    <div class="comfort-card__icon">
+                        <div class="comfort-card__icon-bg">
+                            <img src="images/delivery-truck-icon.svg" alt="Delivery truck icon" class="comfort-card__icon-img">
+                        </div>
+                    </div>
+                    <h3 class="comfort-card__title">We ship.</h3>
+                    <p class="comfort-card__text">We ship your items within 1-2 days of receiving your order.</p>
+                </div>
+                
+                <div class="comfort-card comfort-card--right">
+                    <div class="comfort-card__icon">
+                        <div class="comfort-card__icon-bg">
+                            <img src="images/sun-moon-icon.svg" alt="Sun moon icon" class="comfort-card__icon-img">
+                        </div>
+                    </div>
+                    <h3 class="comfort-card__title">You enjoy!</h3>
+                    <p class="comfort-card__text">Wear hernest around the house, out on the town, or in bed.</p>
+                </div>
             </div>
             
-            <div class="comfort-card comfort-card--middle">
-                <div class="comfort-card__icon">
-                    <div class="comfort-card__icon-bg">
-                        <img src="images/delivery-truck-icon.svg" alt="Delivery truck icon" class="comfort-card__icon-img">
+            <div class="comfort-cta-wrapper">
+                <button class="comfort-cta-button" type="button">
+                    <span>Customize Your Outfit</span>
+                    <svg width="23" height="10" aria-hidden="true">
+                        <use href="images/icons-sprite.svg#icon-arrow-right"></use>
+                    </svg>
+                </button>
+                
+                <div class="comfort-reviews">
+                    <div class="comfort-stars" aria-label="5 out of 5 stars">
+                        <svg width="81" height="13" aria-hidden="true">
+                            <use href="images/icons-sprite.svg#icon-stars"></use>
+                        </svg>
                     </div>
+                    <p class="comfort-reviews__text">Over 500+ 5 Star Reviews Online</p>
                 </div>
-                <h3 class="comfort-card__title">We ship.</h3>
-                <p class="comfort-card__text">We ship your items within 1-2 days of receiving your order.</p>
-            </div>
-            
-            <div class="comfort-card comfort-card--right">
-                <div class="comfort-card__icon">
-                    <div class="comfort-card__icon-bg">
-                        <img src="images/sun-moon-icon.svg" alt="Sun moon icon" class="comfort-card__icon-img">
-                    </div>
-                </div>
-                <h3 class="comfort-card__title">You enjoy!</h3>
-                <p class="comfort-card__text">Wear hernest around the house, out on the town, or in bed.</p>
             </div>
         </div>
-        
-        <div class="comfort-cta-wrapper">
-            <button class="comfort-cta-button" type="button">
-                <span>Customize Your Outfit</span>
-                <svg width="23" height="10" aria-hidden="true">
-                    <use href="images/icons-sprite.svg#icon-arrow-right"></use>
-                </svg>
-            </button>
-            
-            <div class="comfort-reviews">
-                <div class="comfort-stars" aria-label="5 out of 5 stars">
-                    <svg width="81" height="13" aria-hidden="true">
-                        <use href="images/icons-sprite.svg#icon-stars"></use>
+
+        <div class="comfort-mobile">
+            <h2 class="comfort-title comfort-title--mobile-only">Comfort made easy</h2>
+
+            <div class="comfort-mobile-slider" aria-live="polite">
+                <button class="comfort-mobile-nav comfort-mobile-nav--prev" type="button" aria-label="Previous comfort step">
+                    <svg width="11" height="21" aria-hidden="true">
+                        <use href="images/icons-sprite.svg#icon-arrow-left"></use>
                     </svg>
+                </button>
+
+                <div class="comfort-mobile-track-wrapper">
+                    <div class="comfort-mobile-track">
+                        <article class="comfort-mobile-card">
+                            <div class="comfort-mobile-card__icon">
+                                <img src="images/eco-store-icon.svg" alt="" aria-hidden="true">
+                            </div>
+                            <h3>You save.</h3>
+                            <p>Browse our store and find something you love.</p>
+                        </article>
+                        <article class="comfort-mobile-card">
+                            <div class="comfort-mobile-card__icon">
+                                <img src="images/delivery-truck-icon.svg" alt="" aria-hidden="true">
+                            </div>
+                            <h3>We ship.</h3>
+                            <p>We ship your items within 1-2 days of receiving your order.</p>
+                        </article>
+                        <article class="comfort-mobile-card">
+                            <div class="comfort-mobile-card__icon">
+                                <img src="images/sun-moon-icon.svg" alt="" aria-hidden="true">
+                            </div>
+                            <h3>You enjoy!</h3>
+                            <p>Wear hernest around the house, out on the town, or in bed.</p>
+                        </article>
+                    </div>
                 </div>
-                <p class="comfort-reviews__text">Over 500+ 5 Star Reviews Online</p>
+
+                <button class="comfort-mobile-nav comfort-mobile-nav--next" type="button" aria-label="Next comfort step">
+                    <svg width="11" height="21" aria-hidden="true">
+                        <use href="images/icons-sprite.svg#icon-arrow-right-carousel"></use>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="comfort-cta-wrapper comfort-cta-wrapper--mobile-only">
+                <button class="comfort-cta-button" type="button">
+                    <span>Customize Your Outfit</span>
+                    <svg width="23" height="10" aria-hidden="true">
+                        <use href="images/icons-sprite.svg#icon-arrow-right"></use>
+                    </svg>
+                </button>
+                
+                <div class="comfort-reviews">
+                    <div class="comfort-stars" aria-label="5 out of 5 stars">
+                        <svg width="81" height="13" aria-hidden="true">
+                            <use href="images/icons-sprite.svg#icon-stars"></use>
+                        </svg>
+                    </div>
+                    <p class="comfort-reviews__text">Over 500+ 5 Star Reviews Online</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- What are our fans saying Section -->
+    <!-- ========================================================================
+         FANS SECTION - What are our fans saying
+         ======================================================================== -->
     <section class="fans-section">
         <div class="fans-container">
             <h2 class="fans-title">What are our fans saying?</h2>
@@ -363,6 +507,12 @@
                 </button>
             </div>
             
+            <div class="fans-testimonials-dots" role="tablist" aria-label="Testimonials navigation">
+                <button class="fans-testimonials-dot is-active" type="button" role="tab" aria-selected="true" aria-label="Show testimonial group 1"></button>
+                <button class="fans-testimonials-dot" type="button" role="tab" aria-selected="false" aria-label="Show testimonial group 2"></button>
+                <button class="fans-testimonials-dot" type="button" role="tab" aria-selected="false" aria-label="Show testimonial group 3"></button>
+            </div>
+            
             <div class="fans-cta-wrapper">
                 <button class="fans-cta-button" type="button">
                     <span>Customize Your Outfit</span>
@@ -379,6 +529,262 @@
         </div>
     </section>
 
+    <!-- ========================================================================
+         FAQ SECTION - Frequently Asked Questions
+         ======================================================================== -->
+    <section class="faq-section">
+        <div class="faq-container">
+            <div class="faq-left">
+                <h2 class="faq-title">Frequently asked questions.</h2>
+                <div class="faq-list">
+                    <div class="faq-item faq-item--active">
+                        <button class="faq-question" type="button" aria-expanded="true">
+                            <span class="faq-question-text">lorem ipsum dolor sit amet</span>
+                            <span class="faq-icon faq-icon--minus" aria-hidden="true">−</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis sapien facilisis tincidunt pellentesque. In eget ipsum et felis finibus consequat.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" type="button" aria-expanded="false">
+                            <span class="faq-question-text">lorem ipsum dolor sit amet</span>
+                            <span class="faq-icon faq-icon--plus" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis sapien facilisis tincidunt pellentesque. In eget ipsum et felis finibus consequat.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" type="button" aria-expanded="false">
+                            <span class="faq-question-text">lorem ipsum dolor sit amet</span>
+                            <span class="faq-icon faq-icon--plus" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis sapien facilisis tincidunt pellentesque. In eget ipsum et felis finibus consequat.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" type="button" aria-expanded="false">
+                            <span class="faq-question-text">lorem ipsum dolor sit amet</span>
+                            <span class="faq-icon faq-icon--plus" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis sapien facilisis tincidunt pellentesque. In eget ipsum et felis finibus consequat.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" type="button" aria-expanded="false">
+                            <span class="faq-question-text">lorem ipsum dolor sit amet</span>
+                            <span class="faq-icon faq-icon--plus" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis sapien facilisis tincidunt pellentesque. In eget ipsum et felis finibus consequat.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" type="button" aria-expanded="false">
+                            <span class="faq-question-text">lorem ipsum dolor sit amet</span>
+                            <span class="faq-icon faq-icon--plus" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis sapien facilisis tincidunt pellentesque. In eget ipsum et felis finibus consequat.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-cta-wrapper">
+                    <button class="faq-cta-button" type="button">
+                        <span>Customize Your Outfit</span>
+                        <svg width="23" height="10" aria-hidden="true">
+                            <use href="images/icons-sprite.svg#icon-arrow-right"></use>
+                        </svg>
+                    </button>
+                    <div class="faq-cta-reviews">
+                        <span class="faq-cta-stars">★★★★★</span>
+                        <span class="faq-cta-text">Over 500+ 5 Star Reviews Online</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="faq-right">
+                <img src="images/faq-lifestyle-collage.png" alt="Lifestyle collage" class="faq-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================================
+         GREEN IMPACT SECTION - Our total green impact
+         ======================================================================== -->
+    <section class="green-impact-section">
+        <div class="green-impact-container">
+            <h2 class="green-impact-title">Our total green impact</h2>
+            <div class="green-impact-stats">
+                <div class="green-impact-stat">
+                    <div class="green-impact-icon">
+                        <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="21" cy="21" r="21" fill="#E4E4E4"/>
+                            <g transform="translate(5, 10.5)">
+                                <path d="M26.8561 9.22312C27.0236 8.64182 27.0761 8.04163 27.0761 7.45182C27.0761 3.45322 23.823 0.200195 19.8245 0.200195C18.2468 0.200195 16.7468 0.698349 15.4868 1.64094C14.2691 2.55168 13.3508 3.8492 12.9009 5.29479C12.886 5.34262 12.8348 5.45269 12.6276 5.41829C12.6093 5.41524 12.5901 5.41573 12.5705 5.41441C12.5024 5.41005 12.4285 5.40631 12.3523 5.40631C9.98084 5.40631 7.86527 6.93982 7.05442 9.23357C7.04238 9.2677 7.00541 9.34807 6.90752 9.3291C6.89755 9.32716 6.88765 9.32502 6.87769 9.32308C6.51833 9.25101 6.14984 9.2146 5.78238 9.2146C2.70415 9.2146 0.199951 11.7189 0.199951 14.7971C0.199951 17.8753 2.70415 20.3795 5.78224 20.3795H25.252C28.3302 20.3795 30.8345 17.8753 30.8345 14.7971C30.8345 12.3835 29.2546 10.2249 26.9709 9.48597C26.9146 9.46783 26.7968 9.42893 26.8561 9.22312ZM25.252 19.3411H5.78224C3.2768 19.3411 1.23835 17.3028 1.23835 14.7971C1.23835 12.2915 3.27673 10.253 5.78224 10.253C6.08968 10.253 6.39781 10.2844 6.6979 10.3462C6.79593 10.3664 6.89444 10.3766 6.99052 10.3766C7.4767 10.3766 7.85565 10.1105 8.00421 9.66478C8.64594 7.73876 10.3932 6.44471 12.3522 6.44471C12.4153 6.44471 12.4843 6.44935 12.5574 6.45433C12.637 6.45973 12.7194 6.46527 12.8076 6.4661L12.826 6.46617C13.4277 6.46617 13.7841 6.18919 13.885 5.64293C13.8878 5.62742 13.8901 5.61254 13.8924 5.60312C14.705 2.99252 17.089 1.23859 19.8245 1.23859C23.2505 1.23859 26.0377 4.02586 26.0377 7.45182C26.0377 8.03976 25.9515 8.63462 25.7817 9.21979C25.6991 9.5048 25.7178 9.75824 25.8375 9.97319C26.0154 10.2927 26.3353 10.382 26.4892 10.4249L26.5135 10.4317C28.4463 10.989 29.7962 12.7841 29.7962 14.7971C29.796 17.3027 27.7576 19.3411 25.252 19.3411Z" fill="#2A2996" stroke="#2A2996" stroke-width="0.4" />
+                                <path d="M13.3087 10.562C13.0108 10.4659 12.6654 10.4131 12.3359 10.4131C10.7727 10.4131 9.68091 11.4929 9.68091 13.0389C9.68091 14.5517 10.674 15.568 12.152 15.568C12.7409 15.568 13.1687 15.4406 13.3713 15.3645C13.4405 15.3386 13.6243 15.2695 13.5983 14.9838L13.5276 14.6669C13.4961 14.5207 13.3991 14.4335 13.2686 14.4335C13.2116 14.4335 13.1602 14.4507 13.1266 14.4636C12.9586 14.528 12.6908 14.6136 12.3067 14.6136C11.417 14.6136 10.8192 13.9652 10.8192 13.0002C10.8192 12.0083 11.4145 11.3674 12.3358 11.3674C12.6269 11.3674 12.883 11.4108 13.0968 11.4963L13.1079 11.5008C13.1417 11.5148 13.1927 11.536 13.2527 11.536C13.3235 11.536 13.4514 11.5056 13.5111 11.3026L13.6067 10.9778L13.6103 10.9623C13.6407 10.788 13.5222 10.6309 13.3087 10.562Z" fill="#2A2996" />
+                                <path d="M16.6962 10.3936C15.2471 10.3936 14.2349 11.4734 14.2349 13.0195C14.2349 14.5199 15.2152 15.5679 16.6188 15.5679C17.8089 15.5679 19.0898 14.7462 19.0898 12.942C19.0898 11.4414 18.1055 10.3936 16.6962 10.3936ZM16.6576 14.6521C15.9134 14.6521 15.3732 13.9532 15.3732 12.9903C15.3732 12.1535 15.7763 11.3091 16.6769 11.3091C17.6774 11.3091 17.9419 12.3962 17.9419 12.971C17.9418 13.9451 17.4018 14.6521 16.6576 14.6521Z" fill="#2A2996" />
+                                <path d="M22.8157 14.7352H21.791C21.6092 14.7352 21.6991 14.6467 21.7438 14.6029C22.5461 13.8188 23.1406 13.1305 23.1406 12.2817C23.1406 11.5509 22.666 10.8135 21.6057 10.8135C21.1905 10.8135 20.7906 10.9303 20.449 11.1514C20.2363 11.2891 20.1562 11.4908 20.2435 11.667L20.3292 11.8569L20.3354 11.8693C20.3863 11.9647 20.4801 12.0216 20.5861 12.0216C20.697 12.0216 20.7891 11.9618 20.8513 11.9214C21.0612 11.7849 21.2746 11.7157 21.4857 11.7157C21.9248 11.7157 22.1383 11.9248 22.1383 12.353C22.1327 12.9126 21.678 13.4354 20.5928 14.4685C20.5415 14.5125 20.2422 14.7718 20.1087 14.9409C20.0398 15.0283 20.0415 15.1399 20.0429 15.2382L20.0433 15.2776C20.0433 15.5138 20.2453 15.6374 20.4448 15.6374H22.8115C22.8266 15.639 22.8485 15.6407 22.8742 15.6407C23.1319 15.6407 23.2473 15.476 23.2473 15.3126V15.105C23.2474 14.8648 23.0312 14.7371 22.8157 14.7352Z" fill="#2A2996" />
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="green-impact-value">3,927 kg</div>
+                    <div class="green-impact-label">of CO2 saved</div>
+                </div>
+                <div class="green-impact-stat">
+                    <div class="green-impact-icon">
+                        <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="21" cy="21" r="21" fill="#E4E4E4"/>
+                            <g transform="translate(9.5, 5.5)">
+                                <path d="M11.9774 0.305368C11.7829 0.109133 11.5216 -0.00286684 11.2414 5.58086e-05C10.9652 0.000995231 10.7008 0.112682 10.5076 0.31017C10.0785 0.748671 0 11.1468 0 19.7561C0 25.9565 5.04449 31.001 11.2449 31.001C17.4453 31.001 22.4898 25.9565 22.4898 19.7561C22.4898 11.0068 12.4067 0.738129 11.9774 0.305368ZM11.2449 28.9377C6.18203 28.9377 2.06329 24.8189 2.06329 19.7561C2.06329 13.2493 8.95427 5.08192 11.2493 2.54255C13.5478 5.05885 20.4266 13.1434 20.4266 19.7561C20.4265 24.8189 16.3078 28.9377 11.2449 28.9377Z" fill="#2A2996" />
+                                <path d="M7.91114 16.4453C7.71188 16.4453 7.54007 16.5191 7.4145 16.6587C7.29269 16.7939 7.23089 16.9868 7.23089 17.2319V18.3796H5.57699V17.2319C5.57699 16.9835 5.51332 16.7891 5.38764 16.6543C5.25998 16.5175 5.08692 16.4453 4.88703 16.4453C4.68245 16.4453 4.50897 16.5197 4.38538 16.6606C4.26691 16.7956 4.20679 16.9879 4.20679 17.232V20.9556C4.20679 21.1999 4.26754 21.3928 4.38716 21.5286C4.51189 21.6705 4.68475 21.7454 4.88703 21.7454C5.08494 21.7454 5.25748 21.6726 5.38608 21.5348C5.51269 21.3991 5.57699 21.2042 5.57699 20.9556V19.5725H7.23089V20.9556C7.23089 21.1999 7.29164 21.3928 7.41126 21.5286C7.536 21.6705 7.70885 21.7454 7.91114 21.7454C8.10905 21.7454 8.28159 21.6726 8.41018 21.5348C8.5368 21.3991 8.60109 21.2042 8.60109 20.9556V17.232C8.60109 16.9836 8.53742 16.7892 8.41175 16.6544C8.28409 16.5175 8.11103 16.4453 7.91114 16.4453Z" fill="#2A2996" />
+                                <path d="M12.2098 23.5081C12.1102 23.4304 11.9759 23.3909 11.8103 23.3909H11.073C11.1383 23.3315 11.2223 23.2589 11.3303 23.1706C11.5652 22.9786 11.7282 22.8414 11.8289 22.7509C11.9413 22.65 12.051 22.5118 12.1551 22.34C12.2684 22.1532 12.3258 21.9434 12.3258 21.7166C12.3258 21.5702 12.2981 21.4268 12.2433 21.2905C12.1888 21.1545 12.1112 21.0328 12.0128 20.9288C11.9141 20.8245 11.7978 20.7412 11.6649 20.6804C11.4742 20.5956 11.2447 20.5527 10.9833 20.5527C10.7641 20.5527 10.5677 20.5866 10.3999 20.6531C10.2303 20.7205 10.0867 20.8116 9.97317 20.924C9.86023 21.0361 9.7737 21.1637 9.71597 21.3032C9.65846 21.4424 9.62934 21.5798 9.62934 21.712C9.62934 21.8907 9.70334 22.0022 9.76545 22.064C9.85438 22.1529 9.97056 22.2 10.1014 22.2C10.29 22.2 10.4 22.1142 10.4592 22.0419C10.52 21.9676 10.5712 21.87 10.6157 21.7435C10.6555 21.6298 10.6707 21.6002 10.6705 21.6002H10.6704C10.747 21.4829 10.8393 21.4305 10.9696 21.4305C11.0305 21.4305 11.0845 21.4435 11.1346 21.4702C11.1819 21.4954 11.2181 21.5296 11.2454 21.5746C11.2725 21.6195 11.2855 21.6703 11.2855 21.7302C11.2855 21.7906 11.2704 21.8526 11.2394 21.9196C11.2053 21.9934 11.1535 22.0677 11.0855 22.1406C11.0121 22.2194 10.9176 22.2999 10.8084 22.3771C10.7285 22.431 10.6058 22.5344 10.4337 22.693C10.2676 22.8457 10.0796 23.0308 9.87348 23.245C9.80835 23.3141 9.75178 23.4026 9.70063 23.5155C9.64666 23.6347 9.62036 23.734 9.62036 23.8195C9.62036 23.9599 9.67485 24.0878 9.77787 24.1894C9.88163 24.2922 10.0207 24.3442 10.1909 24.3442H11.8769C12.0357 24.3442 12.1618 24.2965 12.2515 24.2027C12.3377 24.1127 12.3832 23.9976 12.3832 23.8699C12.383 23.7215 12.323 23.5965 12.2098 23.5081Z" fill="#2A2996" />
+                                <path d="M17.6648 17.7065C17.4666 17.3041 17.17 16.989 16.7834 16.7702C16.4024 16.5546 15.9434 16.4453 15.4197 16.4453C15.034 16.4453 14.6831 16.5072 14.3763 16.6291C14.0652 16.7528 13.797 16.9344 13.5793 17.1689C13.3626 17.4019 13.1955 17.6869 13.0823 18.0159C12.9712 18.3391 12.9148 18.6978 12.9148 19.0824C12.9148 19.4572 12.9687 19.8118 13.075 20.1363C13.1836 20.4678 13.347 20.7563 13.561 20.9937C13.7767 21.2329 14.0483 21.4205 14.3682 21.5511C14.6839 21.6799 15.0443 21.7453 15.4391 21.7453C15.8358 21.7453 16.1946 21.6818 16.506 21.5562C16.822 21.4288 17.0926 21.2418 17.3107 21.0001C17.5266 20.7605 17.6907 20.4745 17.7982 20.1498C17.9037 19.8314 17.957 19.4744 17.957 19.0888C17.9569 18.565 17.8587 18.1 17.6648 17.7065ZM16.4115 19.9384C16.3069 20.1585 16.173 20.3152 16.0022 20.4172C15.8277 20.5213 15.6414 20.5719 15.4324 20.5719C15.271 20.5719 15.1217 20.542 14.9888 20.4832C14.8574 20.425 14.7386 20.3351 14.6358 20.2161C14.5314 20.0956 14.4488 19.9386 14.3898 19.7496C14.3286 19.5536 14.2976 19.329 14.2976 19.0825C14.2976 18.8383 14.3285 18.6169 14.3895 18.4242C14.4487 18.2376 14.5285 18.0844 14.6272 17.9685C14.7249 17.8538 14.8379 17.769 14.9729 17.709C15.108 17.6492 15.2583 17.6188 15.4196 17.6188C15.6507 17.6188 15.8485 17.6723 16.0241 17.7822C16.1972 17.8908 16.3279 18.0492 16.4236 18.266C16.5233 18.4923 16.5737 18.7669 16.5737 19.0824C16.5737 19.4237 16.5192 19.7118 16.4115 19.9384Z" fill="#2A2996" />
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="green-impact-value">2,546,167 days</div>
+                    <div class="green-impact-label">of drinking water saved</div>
+                </div>
+                <div class="green-impact-stat">
+                    <div class="green-impact-icon">
+                        <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="21" cy="21" r="21" fill="#E4E4E4"/>
+                            <g transform="translate(11.5, 7)">
+                                <path d="M11.8493 1.75247L9.81379 12.1408L17.1878 12.1649L7.15042 26.2479L9.18594 14.819L1.8124 14.7941L11.8493 1.75247ZM11.8507 6.76145e-07C11.802 6.76145e-07 11.7533 0.00172578 11.7055 0.00520339C11.387 0.0302038 11.1759 0.133601 10.9256 0.297021C10.7847 0.388298 10.6576 0.498315 10.5481 0.62386C10.5152 0.66154 10.4842 0.700724 10.4552 0.741277L0.346083 13.7373C-0.0530846 14.2688 -0.111719 14.9702 0.194985 15.5564C0.501239 16.1426 1.12051 16.5142 1.79932 16.519L7.00699 16.5558L5.36973 25.9259C5.21412 26.7312 5.65613 27.5338 6.43417 27.8572C6.66028 27.9516 6.90383 28.0002 7.14994 28C7.71689 28 8.18281 27.7424 8.53239 27.2771L18.6541 13.194C19.0533 12.6626 19.1115 11.9603 18.8052 11.3749C18.4989 10.7887 17.8797 10.4172 17.2009 10.4124L11.9932 10.4036L13.6129 2.16471C13.6472 2.02983 13.6645 1.89138 13.6643 1.75244C13.6643 0.80434 12.8871 0.0314908 11.9147 0.000822156C11.8931 -5.40901e-05 11.8718 6.76145e-07 11.8507 6.76145e-07Z" fill="#2A2996" />
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="green-impact-value">7,321 kWh</div>
+                    <div class="green-impact-label">of energy saved</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================================
+         FIND SOMETHING SECTION - Find something you love
+         ======================================================================== -->
+    <section class="find-something-section">
+        <div class="find-something-gradient" aria-hidden="true">
+            <svg width="1464" height="508" viewBox="0 0 1464 508" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0L1464.15 0V472.921C1464.15 472.921 1468.49 472.452 1475.93 471.614C1489.47 451.815 1518.5 431.319 1580.66 431.319C1821.05 431.319 1538.6 464.559 1475.93 471.614C1463.28 490.111 1464.15 507.999 1464.15 507.999L0 508V0Z" fill="url(#paint0_linear_find_something)" />
+                <defs>
+                    <linearGradient id="paint0_linear_find_something" x1="732.075" y1="507.999" x2="732.075" y2="-0.00162811" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#F9F0E5" />
+                        <stop offset="0.430484" stop-color="#F9F0E5" stop-opacity="0.18" />
+                        <stop offset="1" stop-color="#F9F0E5" stop-opacity="0" />
+                    </linearGradient>
+                </defs>
+            </svg>
+        </div>
+        <div class="find-something-container">
+            <h2 class="find-something-title">Find something you love.</h2>
+            <p class="find-something-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis sapien facilisis tincidunt pellentesque. In eget ipsum et felis finibus consequat.
+            </p>
+            <p class="find-something-description-mobile">
+                Click below to browse our collection!
+            </p>
+            
+            <div class="find-something-images">
+                <div class="find-something-main-image" role="img" aria-label="Loungewear collection"></div>
+            </div>
+            
+            <div class="find-something-cta-wrapper">
+                <button class="find-something-cta-button" type="button">
+                    <span>Customize Your Outfit</span>
+                    <svg width="23" height="10" aria-hidden="true">
+                        <use href="images/icons-sprite.svg#icon-arrow-right"></use>
+                    </svg>
+                </button>
+                
+                <div class="find-something-reviews-mobile">
+                    <div class="find-something-stars-mobile" aria-label="5 out of 5 stars">
+                        <svg width="81" height="13" aria-hidden="true">
+                            <use href="images/icons-sprite.svg#icon-stars"></use>
+                        </svg>
+                    </div>
+                    <p class="find-something-reviews-text-mobile">Over 500+ 5 Star Reviews Online</p>
+                </div>
+                
+                <div class="find-something-shipping-payments">
+                    <div class="find-something-shipping">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <circle cx="8" cy="8" r="7.5" stroke="#4CAF50" stroke-width="1"/>
+                            <path d="M8 4V8L10.5 10.5" stroke="#4CAF50" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                        <span>Ships in 1-2 Days</span>
+                    </div>
+                    
+                    <div class="find-something-payments-divider" aria-hidden="true"></div>
+                    
+                    <div class="find-something-payments">
+                        <div class="payment-methods-image" role="img" aria-label="Payment methods"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="find-something-features">
+                <div class="find-something-feature">
+                    <div class="find-something-feature__icon">
+                        <div class="find-something-feature__icon-circle">
+                            <svg width="19" height="14" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M11.0248 10.4959H6.09101V9.74912H10.278V0.996773H0.996773V9.74912H2.5563V10.4959H0.25V0.25H11.0248V10.4959Z" fill="#676869" stroke="#676869" stroke-width="0.5" />
+                                <path d="M18.1723 10.4962H15.8102V9.74946H17.4255V6.34331L14.1577 2.65396H11.0248V9.74946H12.2763V10.4962H10.2781V1.90723H14.4939L18.1723 6.06V10.4962Z" fill="#676869" stroke="#676869" stroke-width="0.5" />
+                                <path d="M14.0656 12.9306C12.8368 12.9306 11.8374 11.931 11.8374 10.7024C11.8374 9.47371 12.8368 8.47412 14.0656 8.47412C15.2944 8.47412 16.2942 9.47374 16.2942 10.7024C16.2943 11.931 15.2945 12.9306 14.0656 12.9306ZM14.0656 9.22086C13.2489 9.22086 12.5841 9.88541 12.5841 10.7024C12.5841 11.5193 13.2489 12.1838 14.0656 12.1838C14.8828 12.1838 15.5475 11.5193 15.5475 10.7024C15.5475 9.88537 14.8828 9.22086 14.0656 9.22086Z" fill="#676869" stroke="#676869" stroke-width="0.5" />
+                                <path d="M4.35618 12.9306C3.12737 12.9306 2.12793 11.931 2.12793 10.7024C2.12793 9.47371 3.12741 8.47412 4.35618 8.47412C5.58495 8.47412 6.58439 9.47374 6.58439 10.7024C6.58439 11.931 5.58499 12.9306 4.35618 12.9306ZM4.35618 9.22086C3.5394 9.22086 2.87467 9.88541 2.87467 10.7024C2.87467 11.5193 3.5394 12.1838 4.35618 12.1838C5.17292 12.1838 5.83762 11.5193 5.83762 10.7024C5.83765 9.88537 5.17296 9.22086 4.35618 9.22086Z" fill="#676869" stroke="#676869" stroke-width="0.5" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="find-something-feature__text-wrapper">
+                        <p class="find-something-feature__text">FREE Shipping on</p>
+                        <p class="find-something-feature__text">Orders over $200</p>
+                    </div>
+                </div>
+                <div class="find-something-feature">
+                    <div class="find-something-feature__icon">
+                        <div class="find-something-feature__icon-circle">
+                            <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M8.55101 18.2002C8.49273 18.2002 8.43441 18.1912 8.37823 18.1732C6.48997 17.5683 4.88237 16.4082 3.59999 14.725C2.5904 13.3998 1.78201 11.7504 1.19743 9.82277C0.211277 6.57138 0.199951 3.67489 0.199951 3.55319C0.199951 3.26155 0.421486 3.01753 0.711826 2.9895C0.755544 2.98525 5.15374 2.53374 8.21825 0.308259C8.41668 0.16408 8.68539 0.16425 8.88382 0.308315C11.9475 2.53374 16.3462 2.98525 16.3903 2.98956C16.6804 3.01787 16.9019 3.26178 16.9019 3.55319C16.9019 3.67489 16.8906 6.57138 15.9045 9.82282C15.3198 11.7505 14.5115 13.3998 13.5019 14.725C12.2196 16.4082 10.612 17.5684 8.72373 18.1733C8.66755 18.1912 8.60928 18.2002 8.55101 18.2002ZM1.3488 4.05C1.39586 5.00047 1.57883 7.18943 2.28907 9.51991C3.50123 13.4968 5.60763 16.025 8.55095 17.0373C11.5011 16.0227 13.61 13.486 14.8206 9.49409C15.526 7.16808 15.707 4.99577 15.7534 4.05006C14.4847 3.86494 11.1982 3.23844 8.55089 1.45727C5.90335 3.23827 2.61758 3.86488 1.3488 4.05Z" fill="#676869" stroke="#676869" stroke-width="0.4" />
+                                <path d="M8.24846 11.9582C8.11413 11.9582 7.98343 11.9104 7.88042 11.8223L5.83253 10.071C5.59485 9.86771 5.56693 9.51026 5.77018 9.27253C5.97336 9.0348 6.33087 9.00682 6.5686 9.21018L8.16125 10.5722L11.3179 6.43154C11.5075 6.18282 11.8628 6.1348 12.1116 6.32451C12.3604 6.5141 12.4082 6.86945 12.2186 7.11817L8.69883 11.7352C8.60443 11.859 8.46325 11.9385 8.30837 11.955C8.28838 11.9571 8.26839 11.9582 8.24846 11.9582Z" fill="#676869" stroke="#676869" stroke-width="0.4" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="find-something-feature__text-wrapper">
+                        <p class="find-something-feature__text">Over 500+ 5 Star</p>
+                        <p class="find-something-feature__text">Reviews Online</p>
+                    </div>
+                </div>
+                <div class="find-something-feature">
+                    <div class="find-something-feature__icon">
+                        <div class="find-something-feature__icon-circle">
+                            <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M6.10998 2.73925C6.10998 2.47717 6.32325 2.26475 6.58638 2.26475H17.7239C17.8627 2.26475 17.9947 2.32517 18.0852 2.43003C18.1757 2.53495 18.2158 2.67403 18.1948 2.81079L17.719 5.91914C17.683 6.15397 17.48 6.32221 17.2486 6.32221C17.2247 6.32221 17.2006 6.32047 17.1762 6.31672C16.9161 6.27723 16.7374 6.03519 16.777 5.77611L17.1693 3.21375H6.58638C6.32325 3.21375 6.10998 3.00128 6.10998 2.73925ZM9.72687 10.8285H5.50484L3.74459 0.594558C3.70542 0.366745 3.50713 0.200195 3.27502 0.200195H0.676353C0.41322 0.200195 0.199951 0.412614 0.199951 0.674696C0.199951 0.936779 0.41322 1.1492 0.676353 1.1492H2.8733L4.63356 11.3831C4.67331 11.6144 4.87472 11.7776 5.10255 11.7776C5.12922 11.7775 5.15638 11.7753 5.18353 11.7707C5.18544 11.7703 5.18729 11.77 5.1892 11.7696C5.21725 11.7748 5.24621 11.7774 5.27574 11.7774H9.72687C9.99 11.7774 10.2033 11.565 10.2033 11.3029C10.2033 11.0409 9.99 10.8285 9.72687 10.8285ZM8.80604 14.1863V15.0283C8.80604 15.8198 8.15956 16.4637 7.36492 16.4637C6.57029 16.4637 5.92381 15.8198 5.92381 15.0283V14.1863C5.92381 13.3949 6.57023 12.751 7.36482 12.751C8.15951 12.751 8.80604 13.3949 8.80604 14.1863ZM7.85324 14.1863C7.85324 13.9181 7.6342 13.7 7.36492 13.7H7.36482C7.09565 13.7 6.87661 13.9181 6.87661 14.1863V15.0283C6.87661 15.2965 7.09565 15.5147 7.36482 15.5147C7.63414 15.5147 7.85324 15.2965 7.85324 15.0283V14.1863ZM21.1341 9.7607C20.853 12.0102 19.7092 14.016 17.9133 15.4086C16.402 16.5805 14.581 17.2002 12.6959 17.2002C12.341 17.2002 11.9839 17.1782 11.6261 17.1338C11.3268 17.0966 11.0251 17.0428 10.729 16.9739C10.5303 16.9277 10.3832 16.7605 10.3633 16.5583C10.3015 15.9322 10.3098 15.2969 10.3882 14.6703C10.9687 10.0265 15.2341 6.71863 19.8963 7.29699C20.196 7.33421 20.4977 7.38804 20.7934 7.4569C20.992 7.50319 21.139 7.67021 21.159 7.87235C21.221 8.49816 21.2126 9.13352 21.1341 9.7607ZM20.2368 8.31C20.0843 8.28158 19.931 8.25775 19.7784 8.23877C15.6379 7.72546 11.8492 10.6631 11.3336 14.7876C11.3042 15.0228 11.2859 15.2593 11.2787 15.496L15.637 11.6929C15.8348 11.5202 16.1358 11.5399 16.3093 11.7371C16.4826 11.9342 16.4628 12.234 16.2648 12.4067L11.9057 16.2105C13.8562 16.411 15.7757 15.8633 17.3279 14.6597C18.9229 13.4228 19.9389 11.6413 20.1885 9.6434C20.244 9.20069 20.2601 8.7536 20.2368 8.31Z" fill="#676869" stroke="#676869" stroke-width="0.4" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="find-something-feature__text-wrapper">
+                        <p class="find-something-feature__text">Made ethically</p>
+                        <p class="find-something-feature__text">and responsibly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================================
+         SCRIPTS
+         ======================================================================== -->
     <script src="js/main.js"></script>
 
 </body>

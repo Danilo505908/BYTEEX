@@ -455,6 +455,10 @@ body {
     height: 42px;
 }
 
+.loungewear-feature__icon svg use {
+    fill: none;
+}
+
 .loungewear-feature__icon-mobile {
     display: none;
 }
@@ -1034,10 +1038,12 @@ body {
     border: 1px solid rgba(1, 0, 91, 0.05);
 }
 
-.comfort-mobile-card__icon img {
+.comfort-mobile-card__icon img,
+.comfort-mobile-card__icon svg {
     width: 64px;
     height: 64px;
     object-fit: contain;
+    display: block;
 }
 
 .comfort-mobile-card h3 {
@@ -2262,9 +2268,19 @@ body {
         text-align: center;
         gap: 0;
         padding: 40px 0;
-        border-bottom: 1px solid #EDEDED;
+        border-bottom: none;
         width: 244px;
         margin: 0 auto;
+        position: relative;
+    }
+
+    .loungewear-feature:not(:last-child)::after {
+        content: '';
+        position: absolute;
+        width: 334px;
+        height: 1px;
+        bottom: 0;
+        background: rgba(196, 196, 196, 0.5);
     }
 
     .loungewear-feature:last-child {
@@ -2281,11 +2297,16 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
+        position: relative;
     }
 
-    .loungewear-feature__icon svg {
-        width: 26px;
-        height: 19px;
+    .loungewear-feature__icon svg,
+    .loungewear-feature__icon img {
+        width: 24px;
+        height: 24px;
+        max-width: 24px;
+        max-height: 24px;
+        flex-shrink: 0;
     }
 
     .loungewear-feature__icon-desktop {
@@ -2300,10 +2321,15 @@ body {
         height: 100%;
     }
 
-    .loungewear-feature__icon-mobile svg {
-        width: 24px;
-        height: 24px;
+    .loungewear-feature__icon-mobile svg,
+    .loungewear-feature__icon-mobile img {
+        width: 24px !important;
+        height: 24px !important;
+        max-width: 24px !important;
+        max-height: 24px !important;
         object-fit: contain;
+        display: block;
+        flex-shrink: 0;
     }
 
     .loungewear-feature__content {
@@ -2790,8 +2816,10 @@ body {
         width: 100%;
         max-width: 100%;
         height: 240px;
+        background-image: url('../images/find-something-main-mobile.png');
         background-size: cover;
         background-position: center;
+        background-repeat: no-repeat;
     }
 
     .find-something-cta-wrapper {
